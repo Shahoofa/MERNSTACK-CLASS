@@ -1,0 +1,14 @@
+.main{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    animation-name: kitty;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes kitty {
+    0% {background-color: blanchedalmond;(12, 156, 28); l}
+    
+}

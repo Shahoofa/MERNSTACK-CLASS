@@ -1,0 +1,13 @@
+.main{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    transition:width 6s,height  5s,background-color  5s,border-radius 5s,transform 9s;
+}
+.main:hover{
+    width: 300px;
+    height: 300px;
+    border-radius: 40%;
+    background-color: brown;
+    transform: rotate(180deg);
+}

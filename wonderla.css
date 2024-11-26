@@ -1,0 +1,50 @@
+/* Outer container to hold the scrolling content */
+.scrolling-container {
+    width: 100%;
+    overflow: hidden; /* Hide overflowing content */
+    position: relative;
+    background-color: #f8f8f8; /* Optional background */
+    height: 40px; /* Adjust height to fit your content */
+}
+
+/* Scrolling content wrapper */
+.scrolling-content {
+    display: inline-block;
+    white-space: nowrap; /* Prevent content from wrapping */
+    animation: scroll-horizontal 30s linear infinite; /* Infinite scrolling animation */
+}
+
+/* Animation keyframes for scrolling effect */
+@keyframes scroll-horizontal {
+    0% {
+        transform: translateX(100%); /* Start fully off-screen to the right */
+    }
+    100% {
+        transform: translateX(-100%); /* End fully off-screen to the left */
+    }
+}
+
+/* Styling for individual text items */
+.text-item {
+    display: inline-block;
+    margin-right: 30px; /* Space between scrolling items */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
